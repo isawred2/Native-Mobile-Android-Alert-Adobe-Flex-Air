@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SkinnablePopUpContainer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+						   xmlns:s="library://ns.adobe.com/flex/spark" 
+						   width="295" height="187"
+						   skinClass="skins.MobileAlertSkin">
+	<fx:Declarations>
+		<fx:String id="title" />
+		<fx:String id="content" />
+	</fx:Declarations>
+	
+	<s:Image x="78" y="133" source="assets/Button.png" click="this.close()"/>
+	<s:Label x="52" y="25" width="152" height="31" text="{title}" color="#ffffff"/>
+	<s:TextArea x="10" y="64" width="275" height="61" borderVisible="false" text="{content}"
+				contentBackgroundAlpha="0.0" color="#ffffff" editable="false"/>
+	
+	
+</s:SkinnablePopUpContainer>
